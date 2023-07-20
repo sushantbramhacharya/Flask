@@ -1,0 +1,19 @@
+<!-- Example HTML template: doctor_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Information</title>
+</head>
+<body>
+    <h1>Doctor Information</h1>
+    <ul>
+        {% for doctor in doctors %}
+            <li>Name: {{ doctor.Name }}</li>
+            <li>Phone: {{ doctor.Phone }}</li>
+            <li>Specialty: {{ doctor.Specialty }}</li>
+            <li>Other Info: {{ doctor.Other_Info }}</li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
